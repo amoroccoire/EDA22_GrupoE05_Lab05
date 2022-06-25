@@ -129,6 +129,16 @@ public class AVLTree <T extends Comparable <T>> {
     }
     return node;
   }
+  public Node<T> minimum(Node<T> node) {
+    while (node.getLeftNode() != null) {
+			node = node.getLeftNode();
+		}
+		return node;
+	}
+
+  public T remove(T data) {
+		return deleteNode(this.root, data).getData();
+	}
   public void inOrden(Node <T> n) {
     if(n != null) {
       inOrden(n.getLeftNode());
