@@ -2,7 +2,7 @@
 public class AVLTree <T extends Comparable <T>> {
   private Node <T> root;
 
-  public AVL() {
+  public AVLTree() {
     root = null;
   }
   public Node <T> theRoot() {
