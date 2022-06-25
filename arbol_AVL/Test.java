@@ -24,6 +24,12 @@ public class Test {
 		arbolAVL.inOrden(arbolAVL.theRoot());
 		System.out.println();
 		arbolAVL.postOrden(arbolAVL.theRoot());
+
+    arbolAVL.remove(18);
+		arbolAVL.remove(8);
+
+		System.out.println("\n");
+		arbolAVL.inOrden(arbolAVL.theRoot());
 	}
 
 }
