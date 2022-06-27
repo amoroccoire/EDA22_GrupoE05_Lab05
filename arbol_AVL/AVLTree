@@ -24,6 +24,23 @@ public class AVLTree <T extends Comparable <T>> {
 		else
 			return a.getBalanceFactor();
 	}
+	public void contains(T data) {
+		boolean found= contains(root,data);
+		if(found==true)
+			System.out.println("Se hallo al elemento buscado");
+		else
+			System.out.println("No se hallo al elemento buscado");
+	}
+	public boolean contains(Node<T> node,T data) {
+		if(node == null)
+			return false;
+		int cmp = data.compareTo(node.getData());
+		if(cmp < 0)
+			return contains(node.getLeftNode(),data);
+		if(cmp > 0)
+			return contains(node.getRightNode(),data);
+		return true;
+	}
 	public Node <T> left(Node <T> n){  // para girar a la izquierda
 		Node <T> aux = n.getLeftNode();
 		n.setLeftNode(aux.getRightNode());
