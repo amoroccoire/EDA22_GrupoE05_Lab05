@@ -1,8 +1,10 @@
+
 public class Test {
 
 	public static void main(String[] args) {
 		
 		AVLTree<Integer> arbolAVL = new AVLTree<Integer>();
+		
 		
 		arbolAVL.insert(21);
 		arbolAVL.insert(8);
@@ -15,14 +17,14 @@ public class Test {
 		arbolAVL.insert(40);
 		arbolAVL.insert(2);
 		
+		arbolAVL.contains(40);
 		
 		
-		
-		
+		System.out.println("PreOrden: ");
 		arbolAVL.preOrden(arbolAVL.theRoot());
-		System.out.println();
+		System.out.println("\nInOrden: ");
 		arbolAVL.inOrden(arbolAVL.theRoot());
-		System.out.println();
+		System.out.println("\nPostOrden: ");
 		arbolAVL.postOrden(arbolAVL.theRoot());
 	}
 

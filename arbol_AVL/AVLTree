@@ -1,14 +1,13 @@
-
 public class AVLTree <T extends Comparable <T>> {
 	private Node <T> root;
 	
-	public AVL() {
+	public AVLTree() {
 		root = null;
 	}
 	public Node <T> theRoot() {
 		return root;
 	}
-	public Node <T> search (T data,Node <T> n) { // buscar un dato
+	public Node <T> search (T data,Node <T> n) { 
 		if(root==null)
 			return null;
 		else if (n.getData() == data) 
@@ -18,7 +17,7 @@ public class AVLTree <T extends Comparable <T>> {
 		else
 			return search(data,n.getRightNode());
 	}
-	public int height(Node <T> a) {  //altura de arbol
+	public int height(Node <T> a) {  
 		if(a == null)
 			return -1;
 		else
@@ -27,21 +26,21 @@ public class AVLTree <T extends Comparable <T>> {
 	public void contains(T data) {
 		boolean found= contains(root,data);
 		if(found==true)
-			System.out.println("Se hallo al elemento buscado");
+			System.out.println("El elemento buscado SE ENCUENTRA en el árbol\n");
 		else
-			System.out.println("No se hallo al elemento buscado");
+			System.out.println("El elemento buscado NO SE ENCUENTRA en el árbol\\n");
 	}
 	public boolean contains(Node<T> node,T data) {
 		if(node == null)
 			return false;
-		int cmp = data.compareTo(node.getData());
-		if(cmp < 0)
+		int c = data.compareTo(node.getData());
+		if(c < 0)
 			return contains(node.getLeftNode(),data);
-		if(cmp > 0)
+		if(c > 0)
 			return contains(node.getRightNode(),data);
 		return true;
 	}
-	public Node <T> left(Node <T> n){  // para girar a la izquierda
+	public Node <T> left(Node <T> n){  
 		Node <T> aux = n.getLeftNode();
 		n.setLeftNode(aux.getRightNode());
 		aux.setRightNode(n);
@@ -69,43 +68,43 @@ public class AVLTree <T extends Comparable <T>> {
 		aux = right(n);
 		return aux;
 	}
-	public Node <T> insertTree(Node<T> arbol,Node<T> sub){
-		Node <T> padreNuevo = sub;
-		if(arbol.getData().compareTo(sub.getData())<0) {
-			if(sub.getLeftNode()==null) {
-				sub.setLeftNode(arbol);
+	public Node <T> insertTree(Node<T> nuevoNodo,Node<T> root){
+		Node <T> padreNuevo = root;
+		if(nuevoNodo.getData().compareTo(root.getData())<0) {
+			if(root.getLeftNode()==null) {					
+				root.setLeftNode(nuevoNodo);
 			}else {
-				sub.setLeftNode(insertTree(arbol, sub.getLeftNode()));
-				if((height(sub.getLeftNode())-height(sub.getRightNode())>=2)) {
-					if(arbol.getData().compareTo(sub.getLeftNode().getData())<0) {
-						padreNuevo = left(sub);
+				root.setLeftNode(insertTree(nuevoNodo, root.getLeftNode()));
+				if((height(root.getLeftNode())-height(root.getRightNode())>=2)) {
+					if(nuevoNodo.getData().compareTo(root.getLeftNode().getData())<0) {
+						padreNuevo = left(root);
 					}else {
-						padreNuevo = leftLeft(sub);
+						padreNuevo = leftLeft(root);
 					}
 				}
 			}	
-		}else if(arbol.getData().compareTo(sub.getData())>0) {
-			if(sub.getRightNode() == null) {
-				sub.setRightNode(arbol);
+		}else if(nuevoNodo.getData().compareTo(root.getData())>0) {
+			if(root.getRightNode() == null) {				
+				root.setRightNode(nuevoNodo);
 			}else {
-				sub.setRightNode(insertTree(arbol,sub.getRightNode()));
-				if((height(sub.getRightNode())-height(sub.getLeftNode())>=2)) {
-					if(arbol.getData().compareTo(sub.getRightNode().getData())>0) {
-						padreNuevo = right(sub);
+				root.setRightNode(insertTree(nuevoNodo,root.getRightNode()));
+				if((height(root.getRightNode())-height(root.getLeftNode())>=2)) {
+					if(nuevoNodo.getData().compareTo(root.getRightNode().getData())>0) {
+						padreNuevo = right(root);
 					}else {
-						padreNuevo = rightRight(sub);
+						padreNuevo = rightRight(root);
 					}
 				}
 			}
 		}else {
-			System.out.println("Ya existe ese nodo");
+			System.out.println("No se coloco el dato "+nuevoNodo.getData()+" porque ya existe\n");
 		}
-		if((sub.getLeftNode()==null) && (sub.getRightNode()!= null)){
-			sub.setBalanceFactor(sub.getRightNode().getBalanceFactor()+1);
-		}else if((sub.getRightNode() == null) && (sub.getLeftNode()!= null)){
-			sub.setBalanceFactor(sub.getLeftNode().getBalanceFactor()+1);
+		if((root.getLeftNode()==null) && (root.getRightNode()!= null)){
+			root.setBalanceFactor(root.getRightNode().getBalanceFactor()+1);
+		}else if((root.getRightNode() == null) && (root.getLeftNode()!= null)){
+			root.setBalanceFactor(root.getLeftNode().getBalanceFactor()+1);
 		}else {
-			sub.setBalanceFactor(Math.max(height(sub.getLeftNode()), height(sub.getRightNode())+1));
+			root.setBalanceFactor(Math.max(height(root.getLeftNode()), height(root.getRightNode())+1));
 		}
 		return padreNuevo;
 	}
