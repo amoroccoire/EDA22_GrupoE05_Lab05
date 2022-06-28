@@ -34,7 +34,7 @@
 <td>NÚMERO DE PRÁCTICA:</td><td>05</td><td>AÑO LECTIVO:</td><td>2022 A</td><td>NRO. SEMESTRE:</td><td>III</td>
 </tr>
 <tr>
-<td>FECHA DE INICIO:</td><td>20-Junio-2022</td><td>FECHA FIN:</td><td colspan="3">24-Junio-2022</td><td>DURACIÓN:</td><td>02 horas</td>
+<td>FECHA INICIO::</td><td>20-Jun-2022</td><td>FECHA FIN:</td><td>24-Jun-2022</td><td>DURACIÓN:</td><td>02 horas</td>
 </tr>
 <tr><td colspan="4">Integrantes:
         <ul>
