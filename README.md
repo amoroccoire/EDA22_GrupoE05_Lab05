@@ -13,7 +13,7 @@
         </tr>
     </theader>
     <tbody>
-        <tr><td colspan="3"><span style="font-weight:bold;">Formato</span>:Informe de Práctica de Laboratorio</td></tr>
+        <tr><td colspan="3"><span style="font-weight:bold;">Formato</span>: Guía de Práctica de Laboratorio</td></tr>
         <tr><td><span style="font-weight:bold;">Aprobación</span>:  2022/03/01</td><td><span style="font-weight:bold;">Código</span>: GUIA-PRLD-001</td><td><span style="font-weight:bold;">Página</span>: 1</td></tr>
     </tbody>
 </table>
@@ -22,7 +22,6 @@
 <div align="center">
 <span style="font-weight:bold;">INFORME DE LABORATORIO</span><br />
 </div>
-
 
 <table>
 <theader>
@@ -56,7 +55,6 @@
 </<tr>
 </tdbody>
 </table>
-
 <table>
     <theader>
         <tr><th colspan="6">SOLUCIÓN Y RESULTADOS</th></tr>
@@ -66,9 +64,7 @@
           <ul>
           <li>.....
             <pre>
-		 <code> 
-			.....;
-			
+		 <code> ....;
 		 </code>
 	     </pre> 
            </li>
@@ -84,7 +80,6 @@
         </td></tr>
      </tbody>
 </table>
-
 <table>
     <theader>
         <tr><th>RETROALIMENTACIÓN</th></tr>
@@ -93,7 +88,6 @@
          <tr><td colspan="6">                       </td></tr>
     </tbody>
 </table>
-
 <table>
     <theader>
         <tr><th>REFERENCIAS Y BIBLIOGRAFIA</th></tr>
