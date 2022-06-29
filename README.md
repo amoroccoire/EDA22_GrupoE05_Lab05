@@ -207,7 +207,54 @@
 			return true;
 		    }
 	        </code>
-	      </pre>  
+	      </pre>
+	      <p> Para el método remove se hace el método deleteNode, que borra el node desde un node y el dato a eliminar, cuando el deleteNode devuelve el node eliminado se invoca el getData() para devolver el dato. </p>
+	      <pre>
+	      public T remove(T data) {
+		return deleteNode(this.root, data).getData();
+	      }
+	      </pre>
+	      <p> En el método deleteNode se va a buscar el dato desde el node Root para lo cual lo busca mediante la recursividad de los if y else if hasta que el compareTo devuelva 0, para luego identificar que caso de eliminación se va a realizar </p>
+	      <pre>
+	      public Node<T> deleteNode(Node<T> node, T dato) {
+                  if(node == null )
+                     return node;
+                  else if (dato.compareTo(node.getData()) < 0)
+                     node.setLeftNode(deleteNode(node.getLeftNode(), dato));
+                  else if (dato.compareTo((T) node.getData())>0)
+                     node.setRightNode(deleteNode(node.getRightNode(),dato));
+	      </pre>
+	      <p> El primer caso es cuando el node a eliminar no tiene hijos, en ese caso simplemente se elimina el node </p>
+	      <pre>
+                  if (node.getLeftNode() == null && node.getRightNode() == null) 
+                      node = null;
+	      </pre>
+	      <p>En el segundo caso si tiene un hijo ya sea en la rama derecha o izquierda se va hacer un igualización del node y el node del hijo que tiene, es decir, un reemplazo del node con su hijo.</p>
+	      <pre>
+	         else if (node.getLeftNode() == null) 
+                    node = node.getRightNode();
+                else if (node.getRightNode() == null) 
+                    node = node.getLeftNode();
+	      </pre>
+	      <p> Para el tercer caso se crea minium que busca el recorrido minimo de un node dado en los parametros del método </p>
+	      <pre>
+	         public Node<T> minimum(Node<T> node) {
+                    while (node.getLeftNode() != null) {
+			node = node.getLeftNode();
+		    }
+		 return node;
+	         }
+	      </pre>
+	      <p> Luego en el tercer caso se va crear el node temp para que almacene el node minimo desde el hijo derecho del node que va ser eliminado y despues reemplaza los datos del node con el date temp, para luego cambiar eliminar el otro node que tiene el mismo date, despues de analizar los datos se retorna el node </p>
+	      <pre>
+	         else {
+                   Node <T> temp = minimum(node.getRightNode());
+                   node.setData(temp.getData());
+                   node.setRightNode(deleteNode(node.getRightNode(), (T) temp.getData()));
+                 }
+               }
+               return node;
+	      </pre>
 	   </li>
         </td></tr>
      </tbody>
