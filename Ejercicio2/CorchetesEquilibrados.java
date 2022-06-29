@@ -19,6 +19,12 @@ public class CorchetesEquilibrados {
 
             if (simbolo == '[' || simbolo == '(' || simbolo == '{')
                 pila.push(simbolo);
+            else {
+                if (simbolo == ']' && pila.peek() == '[')
+                    pila.pop();
+                else
+                    return "No";
+            }
         }
     }
 }
