@@ -1,10 +1,8 @@
-
 public class Test {
 
 	public static void main(String[] args) {
 		
-		AVLTree<Integer> arbolAVL = new AVL<Integer>();
-		
+		AVLTree<Integer> arbolAVL = new AVLTree<Integer>();
 		
 		arbolAVL.insert(21);
 		arbolAVL.insert(8);
@@ -16,7 +14,10 @@ public class Test {
 		arbolAVL.insert(18);
 		arbolAVL.insert(40);
 		arbolAVL.insert(2);
-		
+
+		System.out.println("\n");
+		arbolAVL.inOrden(arbolAVL.theRoot());
+
 		System.out.println("PreOrden: ");
 		arbolAVL.preOrden(arbolAVL.theRoot());
 		System.out.println("\nInOrden: ");
@@ -34,5 +35,4 @@ public class Test {
 		System.out.println("\nPostOrden: ");
 		arbolAVL.postOrden(arbolAVL.theRoot());
 	}
-
 }

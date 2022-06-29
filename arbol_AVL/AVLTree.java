@@ -175,5 +175,4 @@ public class AVLTree <T extends Comparable <T>> {
 			System.out.print(n.getData()+ ", ");
 		}
 	}
-	
 }
