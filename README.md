@@ -479,9 +479,9 @@
 </table>
 
 <table>
-    <theader>
+    <tbody>
         <tr><th>RETROALIMENTACIÓN</th></tr>
-    </theader>
+    </tbody>
     <tbody>
          <tr>
 	     <th><br><br><br></th>
