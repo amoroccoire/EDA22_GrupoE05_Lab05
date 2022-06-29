@@ -483,7 +483,9 @@
         <tr><th>RETROALIMENTACIÓN</th></tr>
     </theader>
     <tbody>
-         <tr><td colspan="6">                       </td></tr>
+         <tr>
+	     <th><br><br><br></th>
+	 </tr>
     </tbody>
 </table>
 
