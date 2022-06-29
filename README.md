@@ -92,7 +92,7 @@
                         <li>Como el arbol no esta balanceado se realiza una rotacion simple izquierda, quedando asi como raiz el nodo 200 y los otros dos nodos como hijos.</li>
                     </ul>
                     <ul>
-                        <li><img src="https://i.postimg.cc/FzmxWsfq/400.png" alt="image_1" style witdh="300"; height="350"/></li>
+                        <li><img src="https://i.postimg.cc/FzmxWsfq/400.png?raw=true" alt="image_1" style witdh="300"; height="350"/></li>
                         <li>Se ingresa el valor de 400 y se busca un lugar al ser mayor que 300, este ingresa como nodo hijo derecho del nodo 300.</li>
                     </ul>
                     <ul>
