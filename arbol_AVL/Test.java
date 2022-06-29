@@ -14,22 +14,25 @@ public class Test {
 		arbolAVL.insert(18);
 		arbolAVL.insert(40);
 		arbolAVL.insert(2);
-		
-		
-		
-		
-		
-		arbolAVL.preOrden(arbolAVL.theRoot());
-		System.out.println();
-		arbolAVL.inOrden(arbolAVL.theRoot());
-		System.out.println();
-		arbolAVL.postOrden(arbolAVL.theRoot());
-
-    arbolAVL.remove(18);
-		arbolAVL.remove(8);
 
 		System.out.println("\n");
 		arbolAVL.inOrden(arbolAVL.theRoot());
-	}
 
+		System.out.println("PreOrden: ");
+		arbolAVL.preOrden(arbolAVL.theRoot());
+		System.out.println("\nInOrden: ");
+		arbolAVL.inOrden(arbolAVL.theRoot());
+		System.out.println("\nPostOrden: ");
+		arbolAVL.postOrden(arbolAVL.theRoot());
+		
+		arbolAVL.contains(40);
+		arbolAVL.remove(1);
+		
+		System.out.println("PreOrden: ");
+		arbolAVL.preOrden(arbolAVL.theRoot());
+		System.out.println("\nInOrden: ");
+		arbolAVL.inOrden(arbolAVL.theRoot());
+		System.out.println("\nPostOrden: ");
+		arbolAVL.postOrden(arbolAVL.theRoot());
+	}
 }
