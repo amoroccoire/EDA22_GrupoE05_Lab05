@@ -26,9 +26,9 @@ public class AVLTree <T extends Comparable <T>> {
 	public void contains(T data) {
 		boolean found= contains(root,data);
 		if(found==true)
-			System.out.println("El elemento buscado SE ENCUENTRA en el árbol\n");
+			System.out.println("\n\nEl elemento "+data+" SE ENCUENTRA en el árbol\n");
 		else
-			System.out.println("El elemento buscado NO SE ENCUENTRA en el árbol\\n");
+			System.out.println("\n\nEl elemento "+data+" NO SE ENCUENTRA en el árbol\\n");
 	}
 	public boolean contains(Node<T> node,T data) {
 		if(node == null)
@@ -97,7 +97,7 @@ public class AVLTree <T extends Comparable <T>> {
 				}
 			}
 		}else {
-			System.out.println("No se coloco el dato "+nuevoNodo.getData()+" porque ya existe\n");
+			System.out.println("\nNo se coloco el dato "+nuevoNodo.getData()+" porque ya existe\n");
 		}
 		if((root.getLeftNode()==null) && (root.getRightNode()!= null)){
 			root.setBalanceFactor(root.getRightNode().getBalanceFactor()+1);
@@ -115,6 +115,46 @@ public class AVLTree <T extends Comparable <T>> {
 		else
 			root = insertTree(nuevo,root);
 	}
+	public Node<T> deleteNode(Node<T> node, T dato) {
+	    if(node == null )
+	      return node;
+	    else if (dato.compareTo(node.getData()) < 0)
+	      node.setLeftNode(deleteNode(node.getLeftNode(), dato));
+	    else if (dato.compareTo((T) node.getData())>0)
+	      node.setRightNode(deleteNode(node.getRightNode(),dato));
+	    else {
+	      if (node.getLeftNode() == null && node.getRightNode() == null) {
+	        node = null;
+	      }
+	      else if (node.getLeftNode() == null) {
+	        Node<T> temp = node;
+	        node = node.getRightNode();
+	      }
+
+	      else if (node.getRightNode() == null) {
+	        Node<T> temp = node;
+	        node = node.getLeftNode();
+	      }
+
+	      else {
+	        Node <T> temp = minimum(node.getRightNode());
+	        node.setData(temp.getData());
+	        node.setRightNode(deleteNode(node.getRightNode(), (T) temp.getData()));
+	      }
+	    }
+	    return node;
+	  }
+	public Node<T> minimum(Node<T> node) {
+	    while (node.getLeftNode() != null) {
+				node = node.getLeftNode();
+			}
+			return node;
+		}
+
+	  public T remove(T data) {
+			System.out.println("\nEl elemento "+data+" se ha removido del árbol\n");
+		  	return deleteNode(this.root, data).getData();
+		}
 	public void inOrden(Node <T> n) {
 		if(n != null) {
 			inOrden(n.getLeftNode());
