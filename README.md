@@ -472,11 +472,15 @@
            </li>
           </ul>
           </td></tr>   
-        <tr><td colspan="6">II. CONCLUSIONES
-           <li>conclusion </li>
-</td></tr>
+        <tr>
+	    <td colspan="6">
+	        IV. CONCLUSIONES
+                <li></li>
+	    </td>
+	</tr>
  </tbody>
 </table>
+<table>
     <tbody>
         <tr><th>RETROALIMENTACIÓN</th></tr>
     </tbody>
@@ -485,7 +489,7 @@
 	     <th><br><br><br></th>
 	 </tr>
     </tbody>
-
+</table>
 <table>
     <theader>
         <tr><th>REFERENCIAS Y BIBLIOGRAFIA</th></tr>
