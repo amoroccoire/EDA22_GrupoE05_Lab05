@@ -1,5 +1,3 @@
-package Ejercicio2;
-
 public class Stack<T extends Comparable<T>> {
 
     private Node<T> root;
