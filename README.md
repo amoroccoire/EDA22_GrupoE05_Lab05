@@ -437,20 +437,6 @@
            </li>
           </ul>
           </td></tr>   
-        <tr><td colspan="6">II. SOLUCIÓN DEL CUESTIONARIO
-         <ul>
-         <li>¿Qué similitudes hay entre una Lista Enlazada y una Pila? ( 1 pt)
-              <ul>
-                   <li>Ambos trabajan con nodos, los cuales ademas de almacenar un dato tambien almacenan la referencia del siguiente nodo.</li>
- 	       </ul>
-          </li>
-        <li>¿En que casos seria favorable/desfavorable utilizar Pila/Cola? ( 1 pt)
-            <ul>
-                <li>------</li> 
-          </ul>
-        </li>
-         </ul>
-        </td></tr>
         <tr><td colspan="6">III. CONCLUSIONES
            <li>conclusion </li>
 </td></tr>
@@ -475,8 +461,8 @@
             <ul>
                 <li>https://www.w3schools.com/java/</li>
                 <li>https://www.eclipse.org/downloads/packages/release/2022-03/r/eclipse-ide-enterprise-java-and-web-developer</li>
-                <li>https://docs.oracle.com/javase/8/docs/api/java/util/Stack.html</li>
-                <li>https://docs.oracle.com/javase/8/docs/api/java/util/Queue.html</li>
+                <li>https://algorithmtutor.com/Data-Structures/Tree/AVL-Trees/</li>
+                <li>https://docs.oracle.com/javase/tutorial/java/generics/types.html</li>
             </ul></td>
         </tr>
     </tbody>
