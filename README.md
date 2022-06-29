@@ -475,7 +475,16 @@
         <tr>
 	    <td colspan="6">
 	        IV. CONCLUSIONES
-                <li></li>
+                <ul dir="auto">
+		    <li>
+		    	El manejo de pilas ha sido importante para la resolcuion del ejercicio 1, que al final era un analizador sintáctico, 
+			esto puede aplicarse para la implementaci
+		    </li>
+		    <li>
+		    	Un árbol AVL es  un árbol de búsqueda binario que se equilibra a sí mismo. Ofrece una forma más eficiente de buscar e
+			insertar elementos en una estructura de datos.
+		    </li>
+		</ul>
 	    </td>
 	</tr>
  </tbody>
