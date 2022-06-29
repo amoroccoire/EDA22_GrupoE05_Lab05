@@ -7,7 +7,7 @@ public class CorchetesEquilibrados {
         Scanner sc = new Scanner(System.in);
         System.out.print("Cadena: ");
         String cadena = sc.next();
-        System.out.print(isBalanced(cadena));
+        System.out.println(isBalanced(cadena));
     }
 
     public static String isBalanced(String cadena) {
@@ -29,6 +29,9 @@ public class CorchetesEquilibrados {
                     return "NO";
             }
         }
-        return "SI";
+        if (pila.isEmpty())
+            return "SI";
+        else
+            return "NO";
     }
 }
