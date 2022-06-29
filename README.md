@@ -63,10 +63,20 @@
     </theader>
     <tbody>
         <tr><td colspan="6">I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS
+	* I. CORCHETES EQUILIBRADOS
+	  - Ejecución:<br>
+	    Para probar el ejercicio 1, ejecute el archivo [CorchetesEquilibrados.java](Ejercicio1/CorchetesEquilibrados.java), con los siguientes comandos desde la terminal:<br>
+<pre>javac CorchetesEquilibrados.java</pre>
+<pre>java CorchetesEquilibrados</pre>
+<br>
+Si esta trabajando desde un IDE es posible que deba agregar como primera linea a cada clase:
+package Ejercicio1;
+<br>
+Solo ingrese cadenas conformadas por: [,],(,),{,} de lo contrario no funcionara.
           <ul>
           <li>I. Corchetes equilibrados
              <ul>
-	     <li><img src="img/invertido.jpg?raw=true" alt="image_1" style witdh="150"; height="150"/></li>
+	     
  	     <li>-----.</li>
 	    </ul>
            </li>
