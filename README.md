@@ -384,13 +384,13 @@
 		    }
 	        </code>
 	      </pre>
-	      <p> Para el método <b>remove()</b> se hace el método <b>deleteNode</b>, que borra el node desde un node y el dato a eliminar, cuando el deleteNode devuelve el node eliminado se invoca el getData() para devolver el dato. </p>
+	      <p> Para el método <b>remove()</b> se hace el método <b>deleteNode()</b>, que borra el node desde un node y el dato a eliminar, cuando el deleteNode devuelve el node eliminado se invoca el getData() para devolver el dato. </p>
 	      <pre>
 	      public T remove(T data) {
 		return deleteNode(this.root, data).getData();
 	      }
 	      </pre>
-	      <p> En el método <b>deleteNode</b> se va a buscar el dato desde el node Root para lo cual lo busca mediante la recursividad de los if y else if hasta que el compareTo devuelva 0, para luego identificar que caso de eliminación se va a realizar </p>
+	      <p> En el método <b>deleteNode()</b> se va a buscar el dato desde el node Root para lo cual lo busca mediante la recursividad de los if y else if hasta que el compareTo devuelva 0, para luego identificar que caso de eliminación se va a realizar </p>
 	      <pre>
 	      public Node<T> deleteNode(Node<T> node, T dato) {
                   if(node == null )
