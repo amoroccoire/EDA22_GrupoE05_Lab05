@@ -76,7 +76,7 @@
                 <ul>
                     <li>Inserción</li>
                     <ul>
-                        <li><img src="https://i.postimg.cc/7YnRyjw0/100.png" alt="image_1"/></li>
+                        <li><img src="https://i.postimg.cc/7YnRyjw0/100.png" alt="image_1" style witdh="150"; height="150"/></li>
                         <li>Se inserta el numero 100 y como es el primer valor ingresado se coloca como raiz.</li>
                     </ul>
                     <ul>
@@ -84,15 +84,15 @@
                         <li>Se ingresa el número 200 y se busca donde se colocará, al ser mayor que 100(la raiz) se coloca en el nodo hijo derecho de 100.</li>
                     </ul>
                     <ul>
-                        <li><img src="https://i.postimg.cc/26WH9K0q/300.png" alt="image_1" style witdh="150"; height="150"/></li>
+                        <li><img src="https://i.postimg.cc/26WH9K0q/300.png" alt="image_1" style witdh="200"; height="250"/></li>
                         <li>Se ingresa el número 300, se busca en lugar donde se colocará al ser mayor a 200 ingresa en el nodo hijo derecho de este mismo.</li>
                     </ul>
                     <ul>
-                        <li><img src="https://i.postimg.cc/K84DsWzZ/RI-300.png" alt="image_1" style witdh="150"; height="150"/></li>
+                        <li><img src="https://i.postimg.cc/K84DsWzZ/RI-300.png" alt="image_1" style witdh="200"; height="200"/></li>
                         <li>Como el arbol no esta balanceado se realiza una rotacion simple izquierda, quedando asi como raiz el nodo 200 y los otros dos nodos como hijos.</li>
                     </ul>
                     <ul>
-                        <li><img src="https://i.postimg.cc/FzmxWsfq/400.png" alt="image_1" style witdh="150"; height="250"/></li>
+                        <li><img src="https://i.postimg.cc/FzmxWsfq/400.png" alt="image_1" style witdh="200"; height="250"/></li>
                         <li>Se ingresa el valor de 400 y se busca un lugar al ser mayor que 300, este ingresa como nodo hijo derecho del nodo 300.</li>
                     </ul>
                     <ul>
@@ -104,134 +104,134 @@
                         <li>Como el arbol no esta balanceado, se realiza una rotación simple izquierda quedando como padre el nodo 400 de los nodos 300 y 500.</li>
                     </ul>
                     <ul>
-                        <li><img src="https://i.postimg.cc/rwyPygwb/50.png" alt="image_1" style witdh="150"; height="150"/></li>
+                        <li><img src="https://i.postimg.cc/rwyPygwb/50.png" alt="image_1" style witdh="200"; height="250"/></li>
                         <li>Ingresamos 50 como nodo hijo izquierdo de 100.</li>
                     </ul>
                     <ul>
-                        <li><img src="https://i.postimg.cc/VNdZn6MW/25.png" alt="image_1" style witdh="150"; height="150"/></li>
+                        <li><img src="https://i.postimg.cc/VNdZn6MW/25.png" alt="image_1" style witdh="300"; height="350"/></li>
                         <li>Al ingresar el valor de 25, este ingresa como nodo hijo izquierdo de 50.</li>
                     </ul>
                     <ul>
-                        <li><img src="https://i.postimg.cc/mrvj9STT/RD-25.png" alt="image_1" style witdh="150"; height="150"/></li>
+                        <li><img src="https://i.postimg.cc/mrvj9STT/RD-25.png" alt="image_1" style witdh="300"; height="350"/></li>
                         <li>Al no estar balanceado el arbol, se realiza una rotacion simple a la derecha quedanso como padre el nodo 50 de los nodos 25 y 100.</li>
                     </ul>
                     <ul>
-                        <li><img src="https://i.postimg.cc/ZnFw4yt4/350.png" alt="image_1" style witdh="150"; height="150"/></li>
+                        <li><img src="https://i.postimg.cc/ZnFw4yt4/350.png" alt="image_1" style witdh="300"; height="350"/></li>
                         <li>Ingresamos el valor 350 y este ingresa como nodo hijo derecho de 300.</li>
                     </ul>
                     <ul>
-                        li><img src="https://i.postimg.cc/QtcbJWM1/375.png" alt="image_1" style witdh="150"; height="150"/></li>
+                        li><img src="https://i.postimg.cc/QtcbJWM1/375.png" alt="image_1" style witdh="300"; height="350"/></li>
                         <li>Al ingresar el valor de 375 ingresa como nodo hijo derecho de 350.</li>
                     </ul>
                     <ul>
-                        <li><img src="https://i.postimg.cc/DzXd7bLH/RI-375.png" alt="image_1" style witdh="150"; height="150"/></li>
+                        <li><img src="https://i.postimg.cc/DzXd7bLH/RI-375.png" alt="image_1" style witdh="300"; height="350"/></li>
                         <li>Como el árbol no se encuentra balanceado se realiz una rotación simple a la izquierda quedando el nodo 350 como hijo izquierdo de 400 y como padre de 300 y 375.</li>
                     </ul>
                     <ul>
-                        <li><img src="https://i.postimg.cc/Qdn083P9/360.png" alt="image_1" style witdh="150"; height="150"/></li>
+                        <li><img src="https://i.postimg.cc/Qdn083P9/360.png" alt="image_1" style witdh="350"; height="300"/></li>
                         <li>Ingresamos el valor de 360 e ingresa como hijo izquierdo de 375.</li>
                     </ul>
                     <ul>
-                        <li><img src="https://i.postimg.cc/yY1P0xC3/RDD-360.png" alt="image_1" style witdh="150"; height="150"/></li>
+                        <li><img src="https://i.postimg.cc/yY1P0xC3/RDD-360.png" alt="image_1" style witdh="350"; height="300"/></li>
                         <li>Al no estar balanceado se realiza una rotacion doble a la derecha quedando el nodo 375 como padre de 350 y 400.Asi mismo 350 queda como padre de 300 y 360 y 400 como padre de 500.</li>
                     </ul>
                     <ul>
-                        <li><img src="https://i.postimg.cc/3J1tqpFZ/355.png" alt="image_1" style witdh="150"; height="150"/></li>
+                        <li><img src="https://i.postimg.cc/3J1tqpFZ/355.png" alt="image_1" style witdh="350"; height="300"/></li>
                         <li>Al ingresar el valor de 355, este ingresa como nodo hijo izquierdo de 360.</li>
                     </ul>
                     <ul>
-                        <li><img src="https://i.postimg.cc/hP20snKy/RDI-355.png" alt="image_1"/></li>
+                        <li><img src="https://i.postimg.cc/hP20snKy/RDI-355.png" alt="image_1" style witdh="300"; height="350"/></li>
                         <li>Se realiza una rotacion doble izquierda al nodo 350, quedanos asi este como la raiz. Y el nodo 355 queda como hijo de de 360.</li>
                     </ul>
                     <ul>
-                        <li><img src="https://i.postimg.cc/66djdF7g/150.png" alt="image_1" style witdh="150"; height="150"/></li>
+                        <li><img src="https://i.postimg.cc/66djdF7g/150.png" alt="image_1" style witdh="300"; height="350"/></li>
                         <li>Ingresamos el nodo 150 y este ingresa como nodo hijo derecho de 100.</li>
                     </ul>
                     <ul>
-                        <li><img src="https://i.postimg.cc/cCmBVywJ/RDD-150.png" alt="image_1" style witdh="150"; height="150"/></li>
-                        <li>Se realiz un rotacion doble derecha del 100.</li>
+                        <li><img src="https://i.postimg.cc/cCmBVywJ/RDD-150.png" alt="image_1" style witdh="300"; height="350"/></li>
+                        <li>Se realiza un rotacion doble derecha del 100.</li>
                     </ul>
                     <ul>
-                        <li><img src="https://i.postimg.cc/brjm795m/175.png" alt="image_1" style witdh="150"; height="150"/></li>
+                        <li><img src="https://i.postimg.cc/brjm795m/175.png" alt="image_1" style witdh="300"; height="350"/></li>
                         <li>Ingresamos el valor de 175 e ingresa como nodo hijo derecho de 150.</li>
                     </ul>
                     <ul>
-                        <li><img src="https://i.postimg.cc/tCprDDWT/120.png" alt="image_1" style witdh="150"; height="150"/></li>
+                        <li><img src="https://i.postimg.cc/tCprDDWT/120.png" alt="image_1" style witdh="300"; height="350"/></li>
                         <li>Ingresamos 120 y este ingresa como nodo hijo izquierdo de 150.</li>
                     </ul>
                     <ul>
-                        <li><img src="https://i.postimg.cc/JzhpCnTC/190.png" alt="image_1" style witdh="150"; height="150"/></li>
+                        <li><img src="https://i.postimg.cc/JzhpCnTC/190.png" alt="image_1" style witdh="300"; height="350"/></li>
                         <li>Ingresamos 190 y este ingresa como nodo hijo derecho de 175.</li>
                     </ul>
                     <ul>
-                        <li><img src="https://i.postimg.cc/Y2fR4gZw/RDD-190.png" alt="image_1" style witdh="150"; height="150"/></li>
+                        <li><img src="https://i.postimg.cc/Y2fR4gZw/RDD-190.png" alt="image_1" style witdh="300"; height="350"/></li>
                         <li>Realizamos una rotación doble derecha del nodo 175.</li>
                     </ul>
                 </ul>
                 <ul>
                     <li>Eliminación</li>
                     <ul>
-                        <li><img src="https://i.postimg.cc/8C0ny4pt/Del-100.png" alt="image_1" style witdh="150"; height="100"/></li>
+                        <li><img src="https://i.postimg.cc/8C0ny4pt/Del-100.png" alt="image_1" style witdh="350"; height="300"/></li>
                         <li>Eliminamos el nodo con el valor 100.</li>
                     </ul>
                     <ul>
-                        <li><img src="https://i.postimg.cc/0QKXhSrx/Del-100-2.png" alt="image_1" style witdh="150"; height="150"/></li>
+                        <li><img src="https://i.postimg.cc/0QKXhSrx/Del-100-2.png" alt="image_1" style witdh="350"; height="300"/></li>
                         <li>Al encontrarse no balanceado se realiza una rotación simple a la izquierda y el nodo 150 queda como nodo hijo derecho de 50 y como padre de 120 y 175 queda como padre de los nodos 50 y 200.</li>
                     </ul>
                     <ul>
-                        <li><img src="https://i.postimg.cc/qq8bvd85/Del-200.png" alt="image_1" style witdh="150"; height="150"/></li>
+                        <li><img src="https://i.postimg.cc/qq8bvd85/Del-200.png" alt="image_1" style witdh="350"; height="300"/></li>
                         <li>Eliminamos el nodo con valor de 200 y el nodo 190 pasa a ser nodo hijo derecho de 175 y padre de 300.</li>
                     </ul>
                     <ul>
-                        <li><img src="https://i.postimg.cc/2yp9Y5BW/Del-300.png" alt="image_1" style witdh="150"; height="150"/></li>
+                        <li><img src="https://i.postimg.cc/2yp9Y5BW/Del-300.png" alt="image_1" style witdh="350"; height="300"/></li>
                         <li>Eliminamos el nodo 300.</li>
                     </ul>
                     <ul>
-                        <li><img src="https://i.postimg.cc/yYHprkK4/Del-300-2.png" alt="image_1" style witdh="150"; height="250"/></li>
+                        <li><img src="https://i.postimg.cc/yYHprkK4/Del-300-2.png" alt="image_1" style witdh="350"; height="300"/></li>
                         <li>Realizamos una ritacion doble derecha del nodo 150 quedando este como padre de 50 y 175. Asi mismo 50 queda como padre de 25 y 120.</li>
                     </ul>
                     <ul>
-                        <li><img src="https://i.postimg.cc/MGNd0G5L/Del-400.png" alt="image_1" style witdh="150"; height="250"/></li>
+                        <li><img src="https://i.postimg.cc/MGNd0G5L/Del-400.png" alt="image_1" style witdh="350"; height="300"/></li>
                         <li>Eliminamos el nodo con valor de 400.</li>
                     </ul>
                     <ul>
-                        <li><img src="https://i.postimg.cc/XJ5xs0DY/Del-500.png" alt="image_1" style witdh="150"; height="250"/></li>
+                        <li><img src="https://i.postimg.cc/XJ5xs0DY/Del-500.png" alt="image_1" style witdh="350"; height="300"/></li>
                         <li>Eliminamos el nodo con valor de 500.</li>
                     </ul>
                     <ul>
-                        <li><img src="https://i.postimg.cc/vTdhjSpL/Del-500-2.png" alt="image_1" style witdh="150"; height="150"/></li>
+                        <li><img src="https://i.postimg.cc/vTdhjSpL/Del-500-2.png" alt="image_1" style witdh="350"; height="300"/></li>
                         <li>Se realiza una rotación simple a la derecha del nodo 360 quedando este como padre de 355 y 375.</li>
                     </ul>
                     <ul>
-                        <li><img src="https://i.postimg.cc/NjQVLLC7/Del-50.png" alt="image_1" style witdh="150"; height="150"/></li>
+                        <li><img src="https://i.postimg.cc/NjQVLLC7/Del-50.png" alt="image_1" style witdh="350"; height="300"/></li>
                         <li>Eliminamos el nodo con valor de 50 y como no se desequilibra no se realiza ninguna otra acción.</li>
                     </ul>
                     <ul>
-                        <li><img src="https://i.postimg.cc/YqKTKd1P/Del-25.png" alt="image_1" style witdh="150"; height="150"/></li>
+                        <li><img src="https://i.postimg.cc/YqKTKd1P/Del-25.png" alt="image_1" style witdh="250"; height="250"/></li>
                         <li>Eliminamos el nodo con valor de 25 y al seguir equilibrado no realizamo nada mas.</li>
                     </ul>
                     <ul>
-                        <li><img src="https://i.postimg.cc/Wprfn0Qw/Del-350.png" alt="image_1" style witdh="150"; height="150"/></li>
+                        <li><img src="https://i.postimg.cc/Wprfn0Qw/Del-350.png" alt="image_1" style witdh="250"; height="200"/></li>
                         <li>Eliminamos el nodo con valor de 350 y el arbol no se desequilibra.</li>
                     </ul>
                     <ul>
-                        li><img src="https://i.postimg.cc/Cxvv17qS/Del-375.png" alt="image_1" style witdh="150"; height="150"/></li>
+                        <li><img src="https://i.postimg.cc/Cxvv17qS/Del-375.png" alt="image_1" style witdh="200"; height="200"/></li>
                         <li>Seguimos eliminando nodos, ahora el nodo con valor de 75 y el árbol no se desequilibra y no se realiza niguna accion mas.</li>
                     </ul>
                     <ul>
-                        <li><img src="https://i.postimg.cc/VNdKbtqM/Del-360.png" alt="image_1" style witdh="150"; height="150"/></li>
+                        <li><img src="https://i.postimg.cc/VNdKbtqM/Del-360.png" alt="image_1" style witdh="200"; height="200"/></li>
                         <li>Eliminamos el nodo con valor 360 y se mantiene como estaba..</li>
                     </ul>
                     <ul>
-                        <li><img src="https://i.postimg.cc/7YntvwPC/Del-355.png" alt="image_1" style witdh="150"; height="150"/></li>
+                        <li><img src="https://i.postimg.cc/7YntvwPC/Del-355.png" alt="image_1" style witdh="200"; height="200"/></li>
                         <li>Se elimina el nodo con valor de 355.</li>
                     </ul>
                     <ul>
-                        <li><img src="https://i.postimg.cc/bwYCpWdm/Del-355-2.png" alt="image_1" style witdh="150"; height="150"/></li>
+                        <li><img src="https://i.postimg.cc/bwYCpWdm/Del-355-2.png" alt="image_1" style witdh="200"; height="200"/></li>
                         <li>El árbol se encuentra no balanceado, se realiza una rotación simple a la derecha del nodo 150 quedandi este como raiz y padre de los nodos 120 y 190, este último queda como padre del nodo 175.</li>
                     </ul>
                     <ul>
-                        <li><img src="https://i.postimg.cc/Jhn2cvLs/Del-150.png" alt="image_1" style witdh="150"; height="150"/></li>
+                        <li><img src="https://i.postimg.cc/Jhn2cvLs/Del-150.png" alt="image_1" style witdh="200"; height="150"/></li>
                         <li>Eliminamos el nodo con valor de 150.</li>
                     </ul>
                     <ul>
