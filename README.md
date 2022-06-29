@@ -86,7 +86,7 @@
 				 Explicación:
 				 <p>
 				    Con un ciclo for se itera sobre la cadena ingresada, si es un simbolo o caracter de apertura entonces se pushea a
-				    una pila previamente creada, si no lo es, entónces el caracter es pasado como argumento al metodo get() de un
+				    una pila previamente creada, si no lo es, entónces el caracter es pasado como argumento al metodo get() de un 
 				    HashMap que tambien fue creado previamente. En el HashMap la clave es un simbolo de cerradura y el valor es su
 				    opuesto. Una vez recuperado el valor de la clave se compara con el tope de la pila (peek()). Si resulta verdadero
 				    significa que existe un par (), [] o {} y se ejecuta el metodo pop() de la clase 
@@ -478,7 +478,7 @@
                 <ul dir="auto">
 		    <li>
 		    	El manejo de pilas ha sido importante para la resolcuion del ejercicio 1, que al final era un analizador sintáctico, 
-			esto puede aplicarse para la implementaci
+			esto puede aplicarse para la implementación.
 		    </li>
 		    <li>
 		    	Un árbol AVL es  un árbol de búsqueda binario que se equilibra a sí mismo. Ofrece una forma más eficiente de buscar e
