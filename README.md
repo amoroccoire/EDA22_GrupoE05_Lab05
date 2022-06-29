@@ -63,16 +63,50 @@
     </theader>
     <tbody>
         <tr><td colspan="6">I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS
-* I. CORCHETES EQUILIBRADOS
-		- Ejecución:<br>
-		Para probar el ejercicio 1, ejecute el archivo [CorchetesEquilibrados.java](Ejercicio1/CorchetesEquilibrados.java), con los 			siguientes comandos desde la terminal:<br>
-		<code>javac CorchetesEquilibrados.java</code><br>
-		<code>java CorchetesEquilibrados</code>
-		<br>
-		Si esta trabajando desde un IDE es posible que deba agregar como primera linea a cada clase:<br> 
-		<code>package Ejercicio1;</code><br>
-		<br>
-		Solo ingrese cadenas conformadas por: [,],(,),{,} de lo contrario no funcionara.
+	    <ul>
+	        <li>
+		I. Corchetes equilibrados
+		    <ul>
+ 	                <li>
+			    	Ejecución:
+			    <p>
+			        Para probar el ejercicio 1, ejecute el archivo 
+				<a href="Ejercicio1/CorchetesEquilibrados.java">CorchetesEquilibrados.java</a>,con los siguientes comandos desde la terminal:</p>
+			    <p>
+				<code>javac CorchetesEquilibrados.java</code><br>
+			   	<code>java CorchetesEquilibrados</code><br>
+			    </p>
+			    <p>
+				Si esta trabajando desde un IDE es posible que deba agregar como primera linea a cada clase:<br>
+				<code>package Ejercicio1;</code><br>
+				Solo ingrese cadenas conformadas por: [,],(,),{,} de lo contrario no funcionara.
+			    </p>
+			 </li>
+			 <li>
+				 Explicación:
+				 <p>
+				    Con un ciclo for se itera sobre la cadena ingresada, si es un simbolo o caracter de apertura entonces se pushea a
+				    una pila previamente creada, si no lo es, entónces el caracter es pasado como argumento al metodo get() de un
+				    HashMap que tambien fue creado previamente. En el HashMap la clave es un simbolo de cerradura y el valor es su
+				    opuesto. Una vez recuperado el valor de la clave se compara con el tope de la pila (peek()). Si resulta verdadero
+				    significa que existe un par (), [] o {} y se ejecuta el metodo pop() de la clase 
+				    <a href="Ejercicio1/Stack.java">Stack.java</a>, de lo contrario se retorna el String "NO" y la ejecucion para,
+				    esto permite salir del programa sin tener que comprobar el resto de la cadena.
+				 </p>
+				 <p>
+				    Desde una vista general se ejecuta el metodo push() cuando hay algun caracter de apertura, si inmediatamente
+				    después esta un caracter de cerradura de su mismo tipo, entonces se ejcuta el metodo pop() para eliminar el
+				    caracter de apertura. De tal forma que si al final la pila esta vacia entonces la cadena es valida, si no lo esta
+				    se retorna "NO".
+				 </p>
+				 <p>
+				    La complejidad del algoritmo es O(n).
+				 </p>
+			 </li>
+	    	    </ul>
+           	</li>
+            </ul>
+            <ul>
                 <li>II. Operaciones de árbol AVL
                 <ul>
                     <li>Inserción</li>
