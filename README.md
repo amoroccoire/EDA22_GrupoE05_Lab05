@@ -63,16 +63,16 @@
     </theader>
     <tbody>
         <tr><td colspan="6">I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS
-	* I. CORCHETES EQUILIBRADOS
-	  - Ejecución:<br>
-	    Para probar el ejercicio 1, ejecute el archivo [CorchetesEquilibrados.java](Ejercicio1/CorchetesEquilibrados.java), con los siguientes comandos desde la terminal:<br>
-<code>javac CorchetesEquilibrados.java</code><br>
-<code>java CorchetesEquilibrados</code>
-<br>
-Si esta trabajando desde un IDE es posible que deba agregar como primera linea a cada clase:
-package Ejercicio1;
-<br>
-Solo ingrese cadenas conformadas por: [,],(,),{,} de lo contrario no funcionara.
+* I. CORCHETES EQUILIBRADOS
+		- Ejecución:<br>
+		Para probar el ejercicio 1, ejecute el archivo [CorchetesEquilibrados.java](Ejercicio1/CorchetesEquilibrados.java), con los 			siguientes comandos desde la terminal:<br>
+		<code>javac CorchetesEquilibrados.java</code><br>
+		<code>java CorchetesEquilibrados</code>
+		<br>
+		Si esta trabajando desde un IDE es posible que deba agregar como primera linea a cada clase:<br> 
+		<code>package Ejercicio1;</code><br>
+		<br>
+		Solo ingrese cadenas conformadas por: [,],(,),{,} de lo contrario no funcionara.
                 <li>II. Operaciones de árbol AVL
                 <ul>
                     <li>Inserción</li>
