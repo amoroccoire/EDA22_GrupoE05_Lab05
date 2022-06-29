@@ -1,5 +1,3 @@
-package Ejercicio2;
-
 import java.util.Scanner;
 import java.util.HashMap;
 
@@ -30,5 +28,7 @@ public class CorchetesEquilibrados {
                 else
                     return "NO";
             }
+        }
+        return "SI";
     }
 }
